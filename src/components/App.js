@@ -8,7 +8,7 @@ const App = () => {
   const [html, setHtml] = useState('');
 
   useEffect(() => {
-    
+    // Simple markdown to HTML conversion
     const convertedHtml = markdown
       .replace(/^# (.*$)/gim, '<h1>$1</h1>') // Headers
       .replace(/^## (.*$)/gim, '<h2>$1</h2>')
@@ -30,4 +30,3 @@ const App = () => {
 };
 
 export default App;
-
